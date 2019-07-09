@@ -19,7 +19,19 @@ $ gcloud auth print-access-token
 
 $ docker login -u oauth2accesstoken -p "ya29.GltABzJTPLMBPsDbCjVR1boLBhNmJz3dezPMIMts07kWiqqZ21YhDTYG6rNxDtO4N6U8jRCJmnWb6-JSvfSynhqIlOv3_ttUZgiJND8PEH57qZeGaS3EykQkN_5R" https://gcr.io
 ```
+alternative
+
+```
+cat gcp-evgdim-test-d0f056181927.json | docker login -u _json_key --password-stdin https://gcr.io
+```
+
 
 ```
 $ gcloud components install docker-credential-gcr
+```
+
+
+# GAE
+```
+$ gcloud app deploy app.yaml
 ```
