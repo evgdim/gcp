@@ -20,16 +20,16 @@ class GcpApplication
 fun main(args: Array<String>) {
 	runApplication<GcpApplication>(*args)
 
-	val client = MetricServiceClient.create()
-	val name = ProjectName.of("my-project")
-
-	val request = ListMetricDescriptorsRequest
-			.newBuilder()
-			.setName(name.toString())
-			.build()
-	val response = client.listMetricDescriptors(request)
-
-	for (d in response.iterateAll()) {
-		println(d.name + " " + d.displayName)
-	}
+//	val client = MetricServiceClient.create()
+//	val name = ProjectName.of("my-project")
+//
+//	val request = ListMetricDescriptorsRequest
+//			.newBuilder()
+//			.setName(name.toString())
+//			.build()
+//	val response = client.listMetricDescriptors(request)
+//
+//	for (d in response.iterateAll()) {
+//		println(d.name + " " + d.displayName)
+//	}
 }
